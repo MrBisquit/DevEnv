@@ -1,0 +1,63 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="650" d:DesignHeight="225"
+		Width="650" Height="225"
+        x:Class="DevEnv.About"
+        Title="About DevEnv"
+		WindowStartupLocation="CenterOwner"
+		CanResize="False">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+
+		<Image Source="avares://DevEnv/logo.png" Width="200" Height="200"
+			   Grid.RowSpan="5" />
+
+		<TextBlock Foreground="#E240F1"
+				   Grid.Column="1"
+				   Margin="0, 50, 0, 15"
+				   FontSize="25">
+			<Run FontWeight="Black">DevEnv</Run> (<Run FontWeight="SemiBold">Dev</Run>eloper
+			<Run FontWeight="SemiBold">Env</Run>ironment)</TextBlock>
+
+		<TextBlock Grid.Column="1" Grid.Row="1">By WTDawson (William Dawson)</TextBlock>
+		<TextBlock Grid.Column="1" Grid.Row="2">
+			App version: 
+			<Run Name="Version">N/A</Run> • 
+			Engine version: <Run Name="EngineVersion">N/A</Run>
+		</TextBlock>
+
+		<Grid Grid.Column="1" Grid.Row="3" Margin="5">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1*" />
+				<ColumnDefinition Width="1*" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="1*" />
+				<RowDefinition Height="1*" />
+			</Grid.RowDefinitions>
+			
+			<Button HorizontalAlignment="Stretch"
+					HorizontalContentAlignment="Center">Source code</Button>
+			<Button HorizontalAlignment="Stretch"
+					HorizontalContentAlignment="Center"
+					Grid.Column="1">Documentation</Button>
+
+			<Button Grid.Row="1" Grid.ColumnSpan="2"
+					HorizontalAlignment="Stretch"
+					HorizontalContentAlignment="Center">Check for updates</Button>
+		</Grid>
+	</Grid>
+</Window>
