@@ -33,10 +33,11 @@
 			<Run FontWeight="SemiBold">Env</Run>ironment)</TextBlock>
 
 		<TextBlock Grid.Column="1" Grid.Row="1">By WTDawson (William Dawson)</TextBlock>
-		<TextBlock Grid.Column="1" Grid.Row="2">
+		<TextBlock Grid.Column="1" Grid.Row="2" FontSize="10">
 			App version: 
 			<Run Name="Version">N/A</Run> • 
-			Engine version: <Run Name="EngineVersion">N/A</Run>
+			Engine version: <Run Name="EngineVersion">N/A</Run> • 
+			Engine platform: <Run Name="EnginePlatform">N/A</Run>
 		</TextBlock>
 
 		<Grid Grid.Column="1" Grid.Row="3" Margin="5">

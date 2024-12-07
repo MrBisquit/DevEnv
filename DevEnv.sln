@@ -5,6 +5,10 @@ VisualStudioVersion = 17.12.35209.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevEnv", "DevEnv\DevEnv.csproj", "{DC2D983F-4DAD-470A-BFB9-8BD05B953A2B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engines", "Engines", "{5285123A-C331-4466-861D-FA834EB6E719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsEngine", "Engines\WindowsEngine\WindowsEngine.csproj", "{80E42958-32FC-41F8-83E7-BEC26DF8839D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{DC2D983F-4DAD-470A-BFB9-8BD05B953A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC2D983F-4DAD-470A-BFB9-8BD05B953A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC2D983F-4DAD-470A-BFB9-8BD05B953A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E42958-32FC-41F8-83E7-BEC26DF8839D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E42958-32FC-41F8-83E7-BEC26DF8839D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E42958-32FC-41F8-83E7-BEC26DF8839D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E42958-32FC-41F8-83E7-BEC26DF8839D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80E42958-32FC-41F8-83E7-BEC26DF8839D} = {5285123A-C331-4466-861D-FA834EB6E719}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2199AEAB-0282-4C38-A758-9AD75802009C}
