@@ -19,4 +19,4 @@ Some platforms may not be available **yet**.
 - Cross-platform **C**ommand **L**ine **I**nterface (**CLI**)
 - Setup guide (Can automatically install everything needed for a specific language, framework and more)
 
-**Note**: Certain features may behave differently or not even exist on different platforms.
+**NOTE**: Certain features may behave differently or not even exist on different platforms.
