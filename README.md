@@ -8,7 +8,7 @@
 | Platform  | Supported  | Engine                | Engine version |
 |:----------|:-----------|:----------------------|:---------------|
 | Windows   | Yes        | DevEnv.Windows.Engine | 1.0.0.0        |
-| Linux     | Yes        | DevEnv.Linux.Engine   | N/A            |
+| Linux     | Yes        | DevEnv.Linux.Engine   | 1.0.0.0        |
 | OSX       | Never will | -                     | -              |
 | FreeBSD   | No         | N/A                   | N/A            |
 
