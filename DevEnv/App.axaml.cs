@@ -1,6 +1,8 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using Projektanker.Icons.Avalonia;
+using Projektanker.Icons.Avalonia.FontAwesome;
 using System.Runtime.InteropServices;
 
 namespace DevEnv
@@ -9,6 +11,9 @@ namespace DevEnv
     {
         public override void Initialize()
         {
+            IconProvider.Current
+                .Register<FontAwesomeIconProvider>();
+
             AvaloniaXamlLoader.Load(this);
         }
 
@@ -41,6 +46,8 @@ namespace DevEnv
             {
                 // Unsupported, tell them and close
             }
+
+            Events.UpdateEngineStatus(this, new Core.EngineManagement.EngineStatus() { status = Core.EngineManagement.EngineStatus.Status.Starting, text = $"Starting {Global.platform} engine" });
         }
     }
 }

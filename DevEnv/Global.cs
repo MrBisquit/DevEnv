@@ -17,5 +17,7 @@ namespace DevEnv
         };
         
         public static Platform platform;
+
+        public static Core.Config config;
     }
 }
