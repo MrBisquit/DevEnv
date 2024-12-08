@@ -14,6 +14,12 @@ namespace DevEnv.Core
 
         public static bool IsConnected = false;
 
+        /// <summary>
+        /// Messages between the client and the server will be in the type of message and then the content in JSON next to it, separated by a semicolon
+        /// E.g.
+        /// message;{ message: "test" }
+        /// </summary>
+
         public static void Initialise()
         {
             string pipeName = "";

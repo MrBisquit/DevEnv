@@ -30,8 +30,14 @@ namespace LinuxEngine
                     try
                     {
                         var line = reader.ReadLine();
-                        Console.WriteLine("Received: " + line);
-                        writer.WriteLine(String.Join("", line.Reverse()));
+                        if(!string.IsNullOrEmpty(line))
+                        {
+                            Console.WriteLine("Received: " + line);
+                            if(line == "ping")
+                            {
+                                writer.WriteLine("pong");
+                            }
+                        }
                         writer.Flush();
                     }
                     catch { }

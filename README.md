@@ -4,6 +4,8 @@
 
 **NOTE**: The AvaloniaUI may not stay
 
+[View documentation](/docs/README.md)
+
 ## Supported platforms
 | Platform  | Supported  | Engine                | Engine version |
 |:----------|:-----------|:----------------------|:---------------|
