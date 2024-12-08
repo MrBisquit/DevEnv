@@ -69,7 +69,7 @@ namespace DevEnv.Core
             CheckFiles();
             try
             {
-                File.WriteAllText(BaseDirectory, JsonConvert.SerializeObject(this));
+                File.WriteAllText(ConfigPath, JsonConvert.SerializeObject(this));
             }
             catch { }
         }
@@ -83,5 +83,7 @@ namespace DevEnv.Core
 
         public _Theme Theme { get; set; } = _Theme.Default;
         public string EngineLocation { get; set; } = string.Empty; // Set up during installation
+
+        public int PipeConnectionTimeout = 5000; // Milliseconds
     }
 }
