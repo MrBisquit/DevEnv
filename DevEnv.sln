@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLI", "CLI\CLI.csproj", "{9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinuxEngine", "Engines\LinuxEngine\LinuxEngine.csproj", "{4C0EAFA8-DA5D-4147-B5EC-41CE0B11A434}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevEnv.Engine.Core", "DevEnv.Engine.Core\DevEnv.Engine.Core.csproj", "{D52572A3-4143-4D96-95F4-C0A73A76671A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{4C0EAFA8-DA5D-4147-B5EC-41CE0B11A434}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C0EAFA8-DA5D-4147-B5EC-41CE0B11A434}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C0EAFA8-DA5D-4147-B5EC-41CE0B11A434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52572A3-4143-4D96-95F4-C0A73A76671A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52572A3-4143-4D96-95F4-C0A73A76671A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52572A3-4143-4D96-95F4-C0A73A76671A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52572A3-4143-4D96-95F4-C0A73A76671A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

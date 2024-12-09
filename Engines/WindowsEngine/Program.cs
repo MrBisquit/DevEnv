@@ -8,8 +8,12 @@ namespace WindowsEngine
         // Definitions
         static KeyValuePair<string, Messages.Base>[] messages =
         {
-
+            new("scan", new Messages.Scan())
         };
+
+        public static NamedPipeServerStream server;
+        public static StreamReader reader;
+        public static StreamWriter writer;
 
         static void Main(string[] args)
         {
@@ -25,12 +29,12 @@ namespace WindowsEngine
             while(true)
             {
                 Console.WriteLine("Starting named pipe instance...");
-                var server = new NamedPipeServerStream("DevEnv_Engines_WindowsEngine_Pipe");
+                server = new NamedPipeServerStream("DevEnv_Engines_WindowsEngine_Pipe");
                 Console.WriteLine("Awaiting connection on pipe \"DevEnv_Engines_WindowsEngine_Pipe\"");
                 server.WaitForConnection();
                 Console.WriteLine("Connected");
-                StreamReader reader = new StreamReader(server);
-                StreamWriter writer = new StreamWriter(server);
+                reader = new StreamReader(server);
+                writer = new StreamWriter(server);
                 while (server.IsConnected)
                 {
                     try

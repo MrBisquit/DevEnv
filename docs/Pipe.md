@@ -32,6 +32,15 @@ The server will respond with `pong` assuming that it's working correctly.
 ### `progress`
 **This will only be sent from the server**.
 
+The JSON structure is:
+```js
+{
+    "value": 0,             // Number (Range: 0-100)
+    "message": "",          // String
+    "intermediate": false   // boolean
+}
+```
+
 ### `scan`
 **This will only be sent to the server**.
 This tells the engine to start scanning the computer for things such as:

@@ -17,7 +17,20 @@
                 if(DevEnv.Core.Pipe.IsConnected)
                 {
                     Console.WriteLine("Connected successfully");
+                    Console.WriteLine("Pinging");
+                    DevEnv.Core.Pipe.writer.WriteLine("ping");
+                    DevEnv.Core.Pipe.writer.Flush();
+                    string message = DevEnv.Core.Pipe.reader.ReadLine();
+                    if(message == "pong")
+                    {
+                        Console.WriteLine("Received pong");
+                    } else
+                    {
+                        Console.WriteLine("Did not receive pong");
+                    }
+
                     Console.WriteLine("Disconnecting...");
+                    DevEnv.Core.Pipe.Disconnect();
                 } else
                 {
                     Console.WriteLine("Could not connect, engine may be offline or busy");
@@ -25,7 +38,7 @@
 
                 while(true)
                 {
-                    Console.Write($"DevENV CLI $ ");
+                    Console.Write($"DevEnv CLI $ ");
                     string command = Console.ReadLine();
                     if (command == "") continue;
                     else if(command == "exit") Environment.Exit(0);
