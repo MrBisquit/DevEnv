@@ -1,0 +1,18 @@
+{
+    "IDEs": [
+        {
+            "name": "VSCode",
+            "ID": "IDEVSC",
+            "checks": [
+                {
+                    "type": 0
+                },
+                {
+                    "type": 1,
+                    "command": "code --version",
+                    "expected": "([0-9]+(\\.[0-9]+)+)"
+                }
+            ]
+        }
+    ]
+}

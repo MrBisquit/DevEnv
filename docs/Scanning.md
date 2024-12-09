@@ -34,3 +34,30 @@ ID scheme: `CCCFFF`
 | VS      |       ⏳        |      ⏳       |     -      |       -        |
 | Node.JS |       ⏳        |      ⏳       |     -      |       -        |
 | Python  |       ⏳        |      ⏳       |     -      |       -        |
+
+## Structure
+
+In the `scanning.json` file, each part will be set out like this, using VSCode as the example:
+
+```js
+{
+    "name": "VSCode",                               // Name
+    "ID": "IDEVSC",                                 // ID
+    "checks": [
+        {
+            "type": 0                               // Type, see meaning below
+        },
+        {
+            "type": 1,                              // Type, see meaning below
+            "command": "code --version",            // Command
+            "expected": "([0-9]+(\\.[0-9]+)+)"      // Expected output (Supports regex)
+        }
+    ]
+}
+```
+
+### `type`
+There are different types of checks:
+
+- `0`: Standard checking if a file or directory exists
+- `1`: Using the command line and expected output (supports regex)
