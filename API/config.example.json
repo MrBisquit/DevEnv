@@ -1,0 +1,7 @@
+{
+    "mongodb": {
+        "server": "MONGODB_SERVER_HERE",
+        "database": "MONGODB_DATABASE_HERE"
+    },
+    "port": 80
+}
