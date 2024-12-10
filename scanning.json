@@ -5,7 +5,8 @@
             "ID": "IDEVSC",
             "checks": [
                 {
-                    "type": 0
+                    "type": 0,
+                    "file": "C:\\Users\\{UserName}\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
                 },
                 {
                     "type": 1,

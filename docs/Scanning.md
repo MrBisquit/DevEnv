@@ -45,7 +45,8 @@ In the `scanning.json` file, each part will be set out like this, using VSCode a
     "ID": "IDEVSC",                                 // ID
     "checks": [
         {
-            "type": 0                               // Type, see meaning below
+            "type": 0,                              // Type, see meaning below
+            "file": "C:\\Users\\{UserName}\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
         },
         {
             "type": 1,                              // Type, see meaning below
@@ -60,4 +61,5 @@ In the `scanning.json` file, each part will be set out like this, using VSCode a
 There are different types of checks:
 
 - `0`: Standard checking if a file or directory exists
+  - Either enter `file` or `directory`, supports filling in details such as `UserName`
 - `1`: Using the command line and expected output (supports regex)
