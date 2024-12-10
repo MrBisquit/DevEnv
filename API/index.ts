@@ -23,7 +23,7 @@ if(!fs.existsSync("config.json")) {
     throw "No config file found";
 }
 
-const config = require("../config.json");
+const config = require(__dirname + "/config.json");
 // Imports
 import { generateRandomString, uptimeToHuman } from "./utils";
 
@@ -44,6 +44,18 @@ app.get("/", (req: Request, res: Response) => {
         ips: req.ips,
         success: true
     });
+});
+
+app.get("/scanning/", async (req: Request, res: Response) => {
+    const response = await fetch("https://raw.githubusercontent.com/MrBisquit/DevEnv/refs/heads/master/scanning.json");
+    if(response.status == 200) {
+        return res.jsonp({ ...(await response.json()), success: true });
+    } else {
+        return res.jsonp({
+            message: "Did not receive status 200 from GitHub",
+            success: false
+        });
+    }
 });
 
 // Listening
