@@ -2,7 +2,7 @@
 ![Github Banner](images/banner_dark.png#gh-dark-mode-only)
 ![Github Banner](images/banner_light.png#gh-light-mode-only)
 
-**NOTE**: The AvaloniaUI may not stay
+[![wakatime](https://wakatime.com/badge/user/3d505310-fc63-44c4-97c5-9f2c6c91114b/project/4a6fdd5f-1088-4be7-bbc0-3dd0c7d18cde.svg)](https://wakatime.com/badge/user/3d505310-fc63-44c4-97c5-9f2c6c91114b/project/4a6fdd5f-1088-4be7-bbc0-3dd0c7d18cde)
 
 [View documentation](/docs/README.md)
 
