@@ -2,7 +2,6 @@
 import * as express from "express";
 import { Request, Response } from "express";
 import { uptime } from "process";
-import * as mongoose from "mongoose";
 import { rateLimit } from 'express-rate-limit';
 import * as fs from "fs";
 
@@ -25,24 +24,8 @@ if(!fs.existsSync("config.json")) {
 }
 
 const config = require("../config.json");
-
-// Server connection
-const server = config.mongodb.server;
-const database = config.mongodb.database;
-
-mongoose.connect(`mongodb://${server}/${database}`)
-    .then(() => {
-        console.log('MongoDB connected!')
-    })
-    .catch(err => {
-        console.log('Failed to connect to MongoDB', err)
-    });
-
 // Imports
-import {  } from "./schemas";
 import { generateRandomString, uptimeToHuman } from "./utils";
-
-// Mongoose models
 
 // API routes
 app.get("/", (req: Request, res: Response) => {
