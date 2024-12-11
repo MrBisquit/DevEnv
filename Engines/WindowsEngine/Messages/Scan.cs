@@ -13,7 +13,7 @@ namespace WindowsEngine.Messages
 
         public override void Run(string data)
         {
-            
+            // Fetch, save and then use scanning data
         }
     }
 }
