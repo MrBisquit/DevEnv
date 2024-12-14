@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\DevEnv.Core\DevEnv.Core.csproj" />
     <ProjectReference Include="..\..\DevEnv.Engine.Core\DevEnv.Engine.Core.csproj" />
   </ItemGroup>
 

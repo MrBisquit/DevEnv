@@ -8,6 +8,7 @@ e.g. `message;{ "message": "test" }`
 | `message`  | A simple message                                                             | [Documentation](#message)  |
 | `ping`     | A ping to the server to check whether or not it's working                    | [Documentation](#ping)     |
 | `progress` | Progress update                                                              | [Documentation](#progress) |
+| `error`    | An error                                                                     | [Documentation](#error)    |
 | `scan`     | Scans the computer for IDEs/Editors/Frameworks/Compilers/Interpreters/Etc... | [Documentation](#scan)     |
 
 ## Engine support
@@ -17,9 +18,9 @@ e.g. `message;{ "message": "test" }`
 - `❌` Not supported
 - `-` Platform not supported
 
-| Type       | Windows engine | Linux engine | OSX Engine | FreeBSD Engine |
-| :--------- | :------------: | :----------: | :--------: | :------------: |
-| `scan`     |      ✔️      |      ⏳       |     -      |       -        |
+| Type   | Windows engine | Linux engine | OSX Engine | FreeBSD Engine |
+| :----- | :------------: | :----------: | :--------: | :------------: |
+| `scan` |      ✔️      |      ⏳       |     -      |       -        |
 
 ## Messages
 
@@ -37,7 +38,18 @@ The JSON structure is:
 {
     "value": 0,             // Number (Range: 0-100)
     "message": "",          // String
-    "intermediate": false   // boolean
+    "intermediate": false   // Boolean
+}
+```
+
+### `error`
+**This will only be sent from the server**.
+
+The JSON structure is:
+```js
+{
+    "message": "",          // String
+    "critical": false       // Boolean
 }
 ```
 

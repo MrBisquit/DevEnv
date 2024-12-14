@@ -85,5 +85,7 @@ namespace DevEnv.Core
         public string EngineLocation { get; set; } = string.Empty; // Set up during installation
 
         public int PipeConnectionTimeout = 5000; // Milliseconds
+
+        public string APILocation = "https://devenv.wtdawson.info";
     }
 }
