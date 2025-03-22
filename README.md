@@ -6,6 +6,8 @@
 
 [View documentation](/docs/README.md)
 
+# [What I intend this project to be](/Project.md)
+
 ## Supported platforms
 | Platform  | Supported  | Engine                | Engine version |
 |:----------|:-----------|:----------------------|:---------------|

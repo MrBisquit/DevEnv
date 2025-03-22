@@ -47,6 +47,12 @@
                 }
             } else
             {
+                switch(args[0])
+                {
+                    case "scan":
+                        Functions.Scan.StartScan();
+                        break;
+                }
                 // Parse the provided arguments
             }
         }

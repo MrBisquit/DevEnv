@@ -22,16 +22,21 @@ namespace WindowsEngine.Messages
              * - At the end send a progress update with the value 100% to tell the GUI or CLI that it is complete
              * */
 
+            Console.WriteLine("Starting scan");
+
             DevEnv.Core.Config config = new DevEnv.Core.Config();
 
             using (HttpClient client = new HttpClient()) {
+                Console.WriteLine("Requesting scanning information");
                 Sending.SendProgressUpdate(message: "Requesting scanning information", intermediate: true);
                 HttpResponseMessage response = await client.GetAsync(config.APILocation + "/scanning/");
                 if (response.IsSuccessStatusCode)
                 {
+                    Console.WriteLine("Received scanning information");
                     Sending.SendProgressUpdate(message: "Received scanning information");
                 } else
                 {
+                    Console.WriteLine("Scan failed: Failed to fetch scanning information");
                     Sending.SendError("Scan failed: Failed to fetch scanning information", true);
                 }
             }
