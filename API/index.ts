@@ -7,6 +7,8 @@ import * as fs from "fs";
 
 const app: express.Express = express.default();
 
+app.use(express.static("public"));
+
 const limiter = rateLimit({
     windowMs: 60 * 1000, // 1 minute
     limit: 1200,
@@ -56,6 +58,10 @@ app.get("/scanning/", async (req: Request, res: Response) => {
             success: false
         });
     }
+});
+
+app.get("/ui/scanning/", (req: Request, res: Response) => {
+    return res.redirect("/ui/scanning.html");
 });
 
 // Listening
