@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> This project has been continued as an organisation, for more information, please visit: [DevEnv-Project/DevEnv](https://github.com/DevEnv-Project/DevEnv)
+
 # DevEnv
 ![Github Banner](images/banner_dark.png#gh-dark-mode-only)
 ![Github Banner](images/banner_light.png#gh-light-mode-only)
